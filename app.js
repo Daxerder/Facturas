@@ -24,10 +24,10 @@ app.use('/java', express.static(path.join(__dirname,'src/views/JS')))
 
 app.use('/', indexRoutes)
 
-app.listen(app.get('port'), ()=>{
+/*app.listen(app.get('port'), ()=>{
     console.log("Servidor en Puerto", app.get('port'))
 })
-
+*/
 server.listen(app.get('port'), () => {
     console.log("server on port", app.get('port'))
 })
